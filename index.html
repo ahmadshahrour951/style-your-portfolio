@@ -1,0 +1,139 @@
+<!-- This is an HTML document about myself! You will see the skeletal semantics to be hopefully appropriate. -->
+<!DOCTYPE html>
+<html>
+  <!-- This is where the meta data lies, i.e. the stuff the user does not see but SEO bots do -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic Markup (Part 1)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- This is where the content about me is actually displayed to the user -->
+
+  <body>
+    <!-- This is the top navigation, which is yet to be implemented as real links -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- This is where I give a strong introduction of what I'm trying to build, and in this case its about me! -->
+    <header class="header-border">
+      <h1>Ahmed Shahrour</h1>
+      <h2>A Self Taught Software Engineer Currently Studying at Make School</h2>
+    </header>
+
+    <!-- This is where the meat of the content lies, here I introduce two sections: Skills and About me. -->
+    <main>
+      <section>
+        <!-- notice as we nest deeper into the skeleton, the titles become less important and hence the semantics differ -->
+        <h3>Skills:</h3>
+        <ul>
+          <li>
+            <!-- I use article here because the h4 and p tags can stand alone with respect to what they're meant to portray -->
+            <article>
+              <h4>
+                Relational and non-relational database design and maintanance
+                (PostgreSQL, MySQL, MongoDB)
+              </h4>
+              <p>
+                I self learned SQL and my employer's application database
+                schema. Within 3 months, I was able to perform an audit to
+                different databases.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h4>Backend orchastration and data wrangling (NodeJS, Django)</h4>
+              <p>
+                I worked on three projects and in all of them, I managed to
+                design and write code for restful APIs. I also have a bit of
+                experience with regards to sockets and managing a large incoming
+                stream of data.
+              </p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h4>
+                Frontend abstraction and design (ReactJS, ReactNative JS, VueJS,
+                Nativescript-Vue)
+              </h4>
+              <p>
+                I have experience in both Web and Mobile platforms. The
+                frameworks I use are by far the most advanced and popular
+                opensource repositories on the web. ReactJS was created by
+                Facebook and VueJS was created by an Ex-Googler.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <!-- This is the second section -->
+      <section>
+        <h3>About me:</h3>
+        <!-- This is the first image, which is Dubai  -->
+        <figure>
+          <img src="img/dubai.jpg" alt="Dubai Buildings" width="200" />
+          <figcaption>Photo by Getty on The Telegraph</figcaption>
+        </figure>
+        <!-- Another picture but it is the campus of a university i studied at -->
+        <figure>
+          <img
+            src="img/university-college-london.jpg"
+            alt="University College London, Main Campus"
+            width="200"
+          />
+          <figcaption>
+            Photo by Danny Palmer on University College London
+          </figcaption>
+        </figure>
+        There are multiple paragraphs to signify a point of completion in topic.
+        Which is very similar to English semantics.
+        <p>
+          I was born and raised in Dubai and I graduated as a civil engineer
+          from University College London. I pivoted my career towards computer
+          science after I worked for a startup called MUNCH:ON.
+        </p>
+        <p>
+          I learnt SQL as an intern and my position morphed into data analyst
+          that can wrangle data by querying the database and using python to
+          manipulate.
+        </p>
+        <p>
+          Since then, I've learnt Javascript and its associated frameworks,
+          which I've used to build 3 projects already in othere startups. I now
+          plan to push my limits and solidify my foundations in applying my
+          programming skills in Make School.
+        </p>
+        <p>
+          Beyond that, I'm very interested in the Internet of Things (IoT). I
+          believed that the human experience can be significantly improved if we
+          know how to collect data and if we're getting a lot of it, which IoT
+          does if you know how to manage and orchastrate your whole application.
+        </p>
+      </section>
+    </main>
+
+    <!-- This is where you start to do the closing, it's probably a good spot for contact details and online presence -->
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/ahmed-shahrour-6273436b"
+            >LinkedIn</a
+          >
+        </li>
+        <li><a href="https://www.github.com/ahmadshahrour951">Github</a></li>
+        <li><a href="https://www.instagram.com/ahmadsha7">Instagram</a></li>
+        <li>
+          <a href="https://www.facebook.com/ahmadshahrour951">Facebook</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
