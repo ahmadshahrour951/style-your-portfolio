@@ -84,3 +84,13 @@ section .content {
   margin-top: 50px;
   /* width: 800px; */
 }
+
+.imgs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+figcaption {
+  font-size: 12px;
+}
