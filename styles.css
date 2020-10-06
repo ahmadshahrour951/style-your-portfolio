@@ -69,3 +69,18 @@ header h2 {
   text-align: center;
   margin-top: 20px;
 }
+
+main h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-top: 70px;
+  margin-top: 50px;
+}
+
+section .content {
+  margin-top: 50px;
+  /* width: 800px; */
+}
