@@ -94,3 +94,24 @@ section .content {
 figcaption {
   font-size: 12px;
 }
+
+footer {
+  margin: 50px 0px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer li {
+  padding: 20px;
+  border: 1px solid;
+  background-color: white;
+  color: #484848;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #484848;
+  font-size: 15px;
+}
